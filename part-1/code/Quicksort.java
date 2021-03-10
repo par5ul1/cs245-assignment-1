@@ -3,7 +3,7 @@
  * @Date:   2021-03-09T00:11:45-08:00
  * @Filename: Quicksort.java
  * @Last modified by:   par5ul1
- * @Last modified time: 2021-03-09T17:51:29-08:00
+ * @Last modified time: 2021-03-09T21:20:09-08:00
  */
 
 public class Quicksort {
@@ -31,7 +31,7 @@ public class Quicksort {
       int bot = left + 1;
       int top = right;
 
-      while (bot < top) { // As long as the two pointers haven't crossed each other:
+      while (bot-1 < top) { // As long as the two pointers haven't crossed each other:
         while (bot <= right && arr[bot] <= arr[pivot]) { // While bot still has room to walk and bot is smaller that the pivot:
           bot++; // Walk bot to the right
         }
